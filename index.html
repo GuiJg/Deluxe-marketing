@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon shortcut" href="assets/deluxe-logo.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon shortcut" href="assets/deluxe-logo.jpg">
     <title>Deluxe - Marketing & Mídia</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
         <nav class="header-menu">
             <a href="#about" class="header-link">SOBRE</a>
             <a href="#services" class="header-link">SERVIÇOS</a>
-            <a href="#solutions" class="header-link">PROJETOS</a>
+            <a href="#projects" class="header-link">PROJETOS</a>
             <a href="#contact" class="header-link">CONTATO</a>
             <div class="btn-talk">
                 <a class="btn" href="https://shre.ink/deluxeagency" target="_blank">FALE COM UM ESPECIALISTA</a>
@@ -31,16 +31,80 @@
         </nav>
     </header>
     <section class="main-page">
-        
+        <div class="container-banner">
+            <div class="text-banner">
+                <h1>
+                    SEJA BEM VINDOS A DELUXE
+                </h1>
+            </div>
+            <img src="assets/socios.jpg" alt="">
+            <img src="assets/diogo.jpg" alt="" id="image">
+            <img src="assets/diogo2.jpg" alt="">
+        </div>  
     </section>
-    <section class="mid-page">
-
+    <div class="social-fixed">
+        <a href="https://shre.ink/deluxeagency" target="_blank" class="social-link">
+            <img src="assets/whatsapp-icon.png" alt="Icone do Whatsapp">
+        </a>
+        <a href="https://www.instagram.com/estrategia.contabil/" target="_blank" class="social-link">
+            <img src="assets/instagram-icon.png" alt="Icone do Instagram">
+        </a>
+        <a href="mailto:contato@egestaocont.com" target="_blank" class="social-link">
+            <img src="assets/email-icon.png" alt="Icone de E-mail">
+        </a>
+        <div class="border"></div>
+    </div>
+    <section class="mid-page" id="about">
+        <h2>
+            SOBRE A DELUXE
+        </h2>
+        <div class="container-about">
+            <img src="assets/deluxe-about.png" alt="">
+            <p>
+                Na Deluxe, somos muito mais do que uma empresa de marketing digital e mídia; somos impulsionadores de crescimento para o seu negócio no mundo digital em constante evolução. Nossa paixão por estratégias inovadoras e criativas nos impulsiona a criar soluções sob medida que elevam a sua marca a novos patamares. Aqui na Deluxe, acreditamos que cada negócio é único e merece uma abordagem personalizada. Estamos dedicados a trabalhar em estreita colaboração com você para criar uma presença digital que se destaque no cenário online, atraindo e envolvendo seu público-alvo de maneira significativa.
+            </p>
+        </div>
     </section>
-    <section class="bottom-page">
-
+    <section class="bottom-page" id="projects">
+        <h2>
+            PROJETOS
+        </h2>
+        <div class="container-projetos">
+            <img src="assets/ft1.jpg" alt="">
+            <img src="assets/ft2.jpg" alt="">
+            <img src="assets/ft3.jpg" alt="">
+            <img src="assets/ft4.jpg" alt="">
+            <img src="assets/ft5.jpg" alt="">
+            <img src="assets/ft6.jpg" alt="">
+            <img src="assets/ft7.jpg" alt="">
+            <img src="assets/ft8.jpg" alt="">
+            <img src="assets/ft9.jpg" alt="">
+        </div>
+    </section>
+    <section class="contact-page" id="contact">
+        <div class="title-contact">
+            <h2>FALE CONOSCO</h2>
+        </div>
+        <div class="container-contact">
+            <div class="container-form">
+                <form action="https://formsubmit.co/josepessoa.dev@gmail.com" method="POST" class="form">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required="">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite um e-mail válido" required="">
+                    <input type="hidden" name="_next" value="https://josepessoa-dev.vercel.app/#contact">
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="message" placeholder="Escreva sua mensagem" required=""></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
     </section>
     <footer>
-
+        <p>
+            Desenvolvido por <strong><a href="https://www.linkedin.com/in/j-gui/" target="_blank" class="footer-content">José Guilherme</a></strong>
+        </p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap');
 
 *{
     margin: 0;
@@ -9,7 +10,7 @@
 }
 
 body{
-    font-family: 'EB Garamond', serif;
+    font-family: 'Roboto Condensed', sans-serif;
     background-color: black;
 }
 
@@ -17,40 +18,323 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    background-color: black;
+    box-shadow: 1px 1px 10px 1px #000;
+    padding: 1%;
+    width: 100%;
+    z-index: 99;
     top: 0;
     left: 0;
     gap: 10em;
+}
+
+.logo-content img{
+    width: 80%;
 }
 
 .header-menu{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 3em;
 }
 
 .header-link{
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     color: #fff;
+    padding: 1%;
     transition: 0.5s;
 }
 
 .header-link:hover{
     transform: translateY(-10%);
-    text-shadow: 1px 1px 1px #fff;
+    text-shadow: 1px 1px 2px #fff;
 }
 
 .btn-talk{
     display: flex;
+    text-align: center;
+    padding: 1%;
 }
 
 .btn{
     text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 10em;
     color: #fff;
+    padding: 5%;
+    width: 16em;
+    margin-left: 1em;
     transition: 0.5s;
 }
 
 .btn:hover{
-    transform: translateY(-10%);
-    text-shadow: 1px 1px 1px #fff;
+    transform: translateX(2%);
+    box-shadow: -1px 2px 1px 1px #fff;
+}
+
+.btn:active{
+    transform: translateX(0%);
+    box-shadow: none;
+}
+
+.container-banner{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15%;
+}
+
+.container-banner img{
+    filter: blur(7px);
+}
+
+.text-banner{
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 450px;
+    left: 400px;
+}
+
+.text-banner h1{
+    font-family: 'Josefin Slab', serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+#image{
+    width: 40%;
+}
+
+.mid-page{
+    margin: 0% 8%;
+}
+
+.mid-page h2{
+    font-family: 'Josefin Slab', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-top: 13%;
+    margin-bottom: 5%;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.social-fixed {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 1% 0% 0% 0%;
+    z-index: 10;
+    bottom: 0;
+    left: 1%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.social-link {
+    filter: brightness(100%);
+    width: 35px;
+    transition: 0.5s;
+}
+
+.social-link:hover{
+    transform: translateY(-5%);
+}
+
+.border {
+    background-color: #000;
+    height: 80px;
+    width: 3px;
+    margin-top: 20%;
+    margin-left: 45%;
+    border-radius: 10px;
+}
+
+.container-about{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.container-about p{
+    text-align: justify;
+    width: 50%;
+    color: #fff;
+}
+
+.bottom-page{
+    margin: 15% 8%;
+}
+
+.bottom-page h2{
+    font-family: 'Josefin Slab', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 5%;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.container-projetos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-projetos img{
+    width: 30%;
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+}
+
+.title-contact{
+    display: flex;
+}
+
+.title-contact h2{
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-bottom: 1px solid #fff;
+    width: 25em;
+    color: #fff;
+}
+
+.title-contact p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #ffffffbb;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+    width: 99%;
+    background: #000000;
+    transition: 0.5s;
+}
+
+.form label:focus,
+.form input:focus,
+.form textarea:focus{
+    color: #000;
+    background: #fff;
+}
+
+.form label{
+    background: none;
+    color: #fff;
+    line-height: 1;
+}
+
+.form input,
+.form textarea{
+    font: inherit;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+    padding: 0.8rem;
+    color: #fff;
+    transition: border-color 0.5s;
+    transition: 0.5s;
+    box-shadow: 0.2s;
+}
+
+.form input::placeholder,
+.form textarea::placeholder{
+    color: #fff;
+}
+
+.form input:focus::placeholder,
+.form textarea:focus::placeholder{
+    color: #000;
+}
+
+
+.form textarea{
+    min-height: 13rem;
+    resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus{
+    outline: none;
+    filter: brightness(90%);
+    box-shadow: 2px 2px 3px 0px #fff;
+}
+
+.form button{
+    display: flex;
+    justify-content: center;    
+    background: transparent;   
+    text-transform: uppercase;   
+    cursor: pointer;
+    color: #fff;
+    border: 0.1em solid ;
+    border-radius: 10px;
+    padding: 1.5%;
+    width: 10em;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.form button:hover{
+    background: linear-gradient(#fff, #afaeae);
+    color: #000;
+}
+
+.formu{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.formu::before{
+    display: block;
+}
+
+.footer-content{
+    text-decoration: none;
+    color: #000;
+}
+
+footer{
+    text-align: center;
+    margin-top: auto;
+    background-color: #fff;
+    color: #000;
+    padding: 2%;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
